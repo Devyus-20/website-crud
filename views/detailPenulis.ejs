@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form Login</title>
+  </head>
+  <body>
+    <form action="/penulis/<%=dataPenulis.id%>?_method=PUT" method="POST">
+      <fieldset>
+        <legend>penulis</legend>
+        <p>
+          <label>Id:</label>
+          <input
+            type="text"
+            name="id"
+            placeholder="Id..."
+            value="<%=dataPenulis.id%>"
+          />
+        </p>
+        <p>
+          <label>Nama:</label>
+          <input
+            type="text"
+            name="nama"
+            placeholder="Nama..."
+            value="<%=dataPenulis.nama%>"
+          />
+        </p>
+
+        <p>
+          <input type="submit" name="submit" value="update" />
+        </p>
+      </fieldset>
+    </form>
+  </body>
+</html>
